@@ -31,14 +31,20 @@ The complete pipeline is composed of:
 
 WINGS/
 ├── README.md
-├── data_collection_tab5_MACv4_V5_Stable.ino    -->    Firmware for WiFi RSSI acquisition and MQTT transmission.
-├── guide_musee_tab5_V1_stable.ino    -->Firmware for real-time indoor positioning and contextual display.
-├── WiFi_Indoor_Geolocation_Training_MQTT.ipynb    -->Google Colab notebook used for dataset processing, neural network training and weight export.
-├── nn_weights.json    -->Trained neural network parameters
-├── mac_addresses_treasure.json    -->Fixed list of selected WiFi Access Points
+├── firmware/
+│   ├── data_collection_tab5_MACv4_V5_Stable.ino    -->    WiFi RSSI acquisition and MQTT transmission firmware.
+│   └── guide_musee_tab5_V1_stable.ino    -->    Real-time indoor positioning and contextual display firmware.
+├── firmware_tests/
+│   └── Programme_lecture_json.ino    -->    Utility program used to validate JSON weight loading and parsing.
+├── datasets/    -->    Raw WiFi fingerprint datasets used for neural network training.
+│   ├── Zone_1_v2.csv
+│   └── Zone_2_v2.csv
+├── training/
+│   └── WiFi_Indoor_Geolocation_Training_MQTT.ipynb    -->    Neural network training notebook (Google Colab).
+├── nn_weights.json    -->    Trained neural network parameters.
+├── mac_addresses_treasure.json    -->    Ordered WiFi Access Point reference list.
 └── images/
-    ├── system_architecture.png
-    └── tab5_device.jpg
+        System diagrams and device pictures.
 
 ---
 
@@ -70,6 +76,32 @@ Training dataset:
 - ~86.9% accuracy  
 
 Inference is performed directly on the ESP32 (Edge AI, no cloud required after training).
+
+---
+
+## Dataset Structure
+
+The datasets located in the `/datasets` directory contain structured WiFi RSSI fingerprints.  
+
+Each CSV file corresponds to a labeled zone and includes:  
+
+- Ordered RSSI values  
+- Predefined MAC address mapping  
+- Zone label  
+
+These datasets are used as input for neural network training in the Colab notebook.
+
+---
+
+## JSON Validation Tool
+
+The `Programme_lecture_json.ino` firmware is a utility program used to:  
+
+- Test JSON parsing on ESP32  
+- Validate weight loading from `nn_weights.json`  
+- Debug SD card reading issues  
+
+This program ensured correct embedded inference implementation before deploying the final museum guide firmware.
 
 ---
 
