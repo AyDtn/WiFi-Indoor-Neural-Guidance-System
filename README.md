@@ -217,11 +217,11 @@ The system operates entirely locally once trained.
 
 The system runs on an M5Stack Tab5 (ESP32-based tablet).
 
-A thin custom 3D-printed ABS protective shell was designed to protect the device during data collection sessions.
-  <img src="assets/Tab5_4" width="500">
-  <img src="assets/Tab5_3" width="500">
-  <img src="assets/Tab5_2" width="500">
-  <img src="assets/Tab5_1" width="500">
+A thin custom 3D-printed ABS protective shell was designed to protect the device during data collection sessions.  
+  <img src="assets/Tab5_4.jpeg" width="165">
+  <img src="assets/Tab5_3.jpeg" width="165">
+  <img src="assets/Tab5_2.jpeg" width="165">  
+  <img src="assets/Tab5_1.jpeg" width="495">
 
 ---
 
