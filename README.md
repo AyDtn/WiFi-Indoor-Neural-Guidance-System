@@ -68,6 +68,8 @@ WINGS/
 7. The device performs real-time inference.
 8. An image and contextual information are displayed according to the detected zone.
 
+  <img src="assets/Workflow.png" width="500">
+
 ---
 
 ## Neural Network Model
