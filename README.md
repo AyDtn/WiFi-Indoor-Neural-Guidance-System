@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # W.I.N.G.S – WiFi Indoor Neural Guidance System
 
 ### Smart Indoor Positioning using WiFi Fingerprinting and Edge AI
@@ -192,7 +191,3 @@ A thin custom 3D-printed ABS protective shell was designed to protect the device
 ## License
 
 This project is licensed under the GNU General Public License v3.0 (GPL v3).
-=======
-# WiFi-Indoor-Neural-Guidance-System
-Real-time indoor positioning system using WiFi fingerprinting, MQTT data collection, neural network training (Colab) and embedded edge inference on ESP32 (M5Stack Tab5).
->>>>>>> 09ff9cc7ba41d262b69e5cc9be70a8860c56b83b
