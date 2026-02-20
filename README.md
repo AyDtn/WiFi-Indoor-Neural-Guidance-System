@@ -1,3 +1,10 @@
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+![Platform: ESP32](https://img.shields.io/badge/Platform-ESP32-lightgrey.svg)
+![Protocol: MQTT](https://img.shields.io/badge/Protocol-MQTT-purple.svg)
+![Method: WiFi Fingerprinting](https://img.shields.io/badge/Method-WiFi%20Fingerprinting-blue.svg)
+![AI: Edge Inference](https://img.shields.io/badge/AI-Edge%20Inference-green.svg)
+![Model: Neural Network](https://img.shields.io/badge/Model-Feedforward%20NN-brightgreen.svg)
+
 # W.I.N.G.S – WiFi Indoor Neural Guidance System
 
 ### Smart Indoor Positioning using WiFi Fingerprinting and Edge AI
@@ -29,6 +36,7 @@ The complete pipeline is composed of:
 
 ## Repository Architecture
 
+```
 WINGS/
 ├── README.md
 ├── firmware/
@@ -44,7 +52,8 @@ WINGS/
 ├── nn_weights.json    -->    Trained neural network parameters.
 ├── mac_addresses_treasure.json    -->    Ordered WiFi Access Point reference list.
 └── images/
-        System diagrams and device pictures.
+      └── System diagrams and device pictures.
+```
 
 ---
 
